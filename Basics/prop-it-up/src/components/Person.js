@@ -4,10 +4,7 @@ class Person extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            firstName: props.firstName,
-            lastName: props.lastName,
-            age: props.age,
-            hairColor: props.hairColor
+            age: props.age
         }
     }
 
@@ -21,10 +18,10 @@ class Person extends Component {
         
         return (
             <div>
-                <h1>{this.state.lastName}, {this.state.firstName}</h1>
+                <h1>{this.props.lastName}, {this.props.firstName}</h1>
                 <p>Age: {this.state.age}</p>
-                <p>Hair Color: {this.state.hairColor}</p>
-                <button onClick={this.happyBirthday}>Birthday Button for {this.state.firstName} {this.state.lastName}</button>
+                <p>Hair Color: {this.props.hairColor}</p>
+                <button onClick={this.happyBirthday}>Birthday Button for {this.props.firstName} {this.props.lastName}</button>
             </div>
         )
     }

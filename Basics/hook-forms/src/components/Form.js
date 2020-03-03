@@ -44,7 +44,7 @@ const Form = props => {
                     <div>
                         <label>Confirm Password:</label>
                         <input type="password" name="confirmpw" onChange={changeHandler} />
-                        {formData.confirmpw != "" && (formData.password !== formData.confirmpw && <p class="red">Passwords must match</p>)}
+                        {formData.confirmpw !== "" && (formData.password !== formData.confirmpw && <p class="red">Passwords must match</p>)}
                     </div>
                 </form>
             </div>

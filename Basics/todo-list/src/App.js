@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Colors from './components/Colors';
+import List from './components/List';
 
 function App() {
   return (
     <div className="App">
-      <Colors />
+      <List />
     </div>
   );
 }

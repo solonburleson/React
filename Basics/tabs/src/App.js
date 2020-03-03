@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Colors from './components/Colors';
+import Tabs from './components/Tabs.js';
 
 function App() {
   return (
     <div className="App">
-      <Colors />
+      <Tabs items={['Tab 1', 'Tab 2', 'Tab 3']} />
     </div>
   );
 }
